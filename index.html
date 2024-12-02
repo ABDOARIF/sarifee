@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARIF - تحويل العملات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>تطبيق SARIF</h1>
+        <p>تحويل الدرهم المغربي (MAD) إلى الروبل الروسي (RUB)</p>
+    </header>
+
+    <section class="converter">
+        <h2>حاسبة تحويل العملة</h2>
+        <label for="madAmount">المبلغ بالدرهم المغربي (MAD):</label>
+        <input type="number" id="madAmount" placeholder="أدخل المبلغ">
+        <button onclick="convertCurrency()">تحويل</button>
+        <p id="result"></p>
+    </section>
+
+    <section class="payment">
+        <h2>معلومات الدفع</h2>
+        <p>الاسم: <strong>ABDELLAH ARIF</strong></p>
+        <p>رقم الحساب: <strong>230010860054121102140096</strong></p>
+    </section>
+
+    <section class="contact">
+        <h2>المراسلة</h2>
+        <form id="contactForm">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" placeholder="أدخل اسمك الكامل" required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" placeholder="أدخل رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
